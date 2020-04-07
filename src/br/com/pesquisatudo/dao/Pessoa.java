@@ -13,8 +13,23 @@ public class Pessoa {
     private String cep;
     private String estado;
     private String cidade;
-    
     private Float salario;
+    
+	public Pessoa(String nome, List<String> emails, List<String> celulares, List<String> telefones, String tipoSangue,
+			String logradouro, String numero, String cep, String estado, String cidade, Float salario) {
+		super();
+		this.nome = nome;
+		this.emails = emails;
+		this.celulares = celulares;
+		this.telefones = telefones;
+		this.tipoSangue = tipoSangue;
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.cep = cep;
+		this.estado = estado;
+		this.cidade = cidade;
+		this.salario = salario;
+	}
 
 	public String getNome() {
 		return nome;
